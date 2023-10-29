@@ -1,6 +1,7 @@
 # Autoencoders: An intro and building your first one
 
 ## Introduction - What are autoencoders?
+
 Autoencoders are a fundamental concept in machine learning, particularly in 
 the field of neural networks. Think of them as clever tools that help us 
 compress and then expand data, like squeezing and stretching a rubber ball. 
@@ -16,6 +17,8 @@ process, where the autoencoder learns to do this compression and decompression
 efficiently, finding a balance between keeping the essential features and 
 reducing the size. This makes them handy for tasks like image compression, 
 denoising, and feature extraction.
+
+![Design](./images/design.png)
 
 Autoencoders aren't just limited to images; they can work with various types 
 of data, like text or numerical values. Think of them as a versatile tool to 
