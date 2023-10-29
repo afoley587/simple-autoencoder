@@ -33,6 +33,10 @@ decoding layer, and then an output layer.
 In our basic example, we are going to build one with just a single encoder 
 and decoder layer and then we will feed some standard images into it. 
 
+In the end, we will have something which closely resembles the diagram below:
+![Architecture](./auto-encoder.png)
+
+
 ## Step 1 - A simple autoencoder
 
 First, let's import our necessary libraries:
@@ -201,4 +205,4 @@ dimensionality can have some benefits to other neural networks that come next in
 image processing/classification pipeline!
 
 ## Links
-All code can be found [here on github]()!
+All code can be found [here on github](https://github.com/afoley587/simple-autoencoder)!
