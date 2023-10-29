@@ -66,6 +66,8 @@ We will be using:
 * Matplotlib to display results
 * Typing for type hints
 
+All dependencies can be found in the [requirements.txt]().
+
 Next, let's create a function to build our autoencoder:
 
 ```python
@@ -123,7 +125,7 @@ curious about _why_ to normalize data, here's a great
 ```python
 def main():
     # Some standard settings
-    epochs     = 10  # number of epochs to run
+    epochs     = 50  # number of epochs to run
     batch_size = 256 # training batch size
     n_digits   = 5   # number of images to show on output graph
 
@@ -200,6 +202,118 @@ validate how our autoencoder does at deconstruction and reconstruction of images
 First, we call `autoencoder.predict()` on our testing data to deconstruct and reconstruct
 each image in our testing dataset. Then, we use `matplotlib` to plot the original images
 on the left side of the plot and the reconstructed images on the right side of the plot.
+
+Finally, let's give this thing a run to see:
+* An example output in the terminal
+* What the reconstructed images look like
+
+```shell
+prompt> python autoencoder/simple.py  
+Epoch 1/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.2759 - val_loss: 0.1870
+Epoch 2/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.1689 - val_loss: 0.1529
+Epoch 3/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.1437 - val_loss: 0.1337
+Epoch 4/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.1286 - val_loss: 0.1214
+Epoch 5/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.1183 - val_loss: 0.1131
+Epoch 6/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.1111 - val_loss: 0.1069
+Epoch 7/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.1059 - val_loss: 0.1025
+Epoch 8/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.1021 - val_loss: 0.0998
+Epoch 9/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0995 - val_loss: 0.0971
+Epoch 10/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0976 - val_loss: 0.0956
+Epoch 11/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0964 - val_loss: 0.0946
+Epoch 12/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0956 - val_loss: 0.0939
+Epoch 13/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0950 - val_loss: 0.0934
+Epoch 14/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0946 - val_loss: 0.0931
+Epoch 15/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0943 - val_loss: 0.0928
+Epoch 16/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0940 - val_loss: 0.0926
+Epoch 17/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0939 - val_loss: 0.0924
+Epoch 18/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0937 - val_loss: 0.0923
+Epoch 19/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0936 - val_loss: 0.0922
+Epoch 20/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0934 - val_loss: 0.0921
+Epoch 21/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0934 - val_loss: 0.0920
+Epoch 22/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0933 - val_loss: 0.0920
+Epoch 23/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0932 - val_loss: 0.0919
+Epoch 24/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0932 - val_loss: 0.0918
+Epoch 25/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0931 - val_loss: 0.0918
+Epoch 26/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0930 - val_loss: 0.0918
+Epoch 27/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0930 - val_loss: 0.0917
+Epoch 28/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0929 - val_loss: 0.0917
+Epoch 29/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0929 - val_loss: 0.0917
+Epoch 30/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0929 - val_loss: 0.0918
+Epoch 31/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0929 - val_loss: 0.0916
+Epoch 32/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0928 - val_loss: 0.0916
+Epoch 33/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0928 - val_loss: 0.0916
+Epoch 34/50
+235/235 [==============================] - 1s 3ms/step - loss: 0.0928 - val_loss: 0.0917
+Epoch 35/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0928 - val_loss: 0.0915
+Epoch 36/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0927 - val_loss: 0.0916
+Epoch 37/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0927 - val_loss: 0.0915
+Epoch 38/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0927 - val_loss: 0.0914
+Epoch 39/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0927 - val_loss: 0.0915
+Epoch 40/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0927 - val_loss: 0.0915
+Epoch 41/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0926 - val_loss: 0.0914
+Epoch 42/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0926 - val_loss: 0.0914
+Epoch 43/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0926 - val_loss: 0.0914
+Epoch 44/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0926 - val_loss: 0.0914
+Epoch 45/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0926 - val_loss: 0.0915
+Epoch 46/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0926 - val_loss: 0.0914
+Epoch 47/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0926 - val_loss: 0.0914
+Epoch 48/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0925 - val_loss: 0.0913
+Epoch 49/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0925 - val_loss: 0.0913
+Epoch 50/50
+235/235 [==============================] - 1s 4ms/step - loss: 0.0925 - val_loss: 0.0913
+313/313 [==============================] - 0s 512us/step
+```
+
+And an example output can be seen below!
+![output](./images/output.png)
 
 The output images should look _similar_ to the inputs, but you'll notice that they are a bit
 blurrier. The features that remain are the features that your autoencoder deemed the most 

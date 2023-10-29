@@ -38,7 +38,7 @@ def generate_auto_encoder(dimensions: int = 32, image_shape: Tuple[int] = (3072,
 def main():
 
     # Some standard settings
-    epochs     = 10  # number of epochs to run
+    epochs     = 50  # number of epochs to run
     batch_size = 256 # training batch size
     n_digits   = 5   # number of images to show on output graph
 
