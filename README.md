@@ -34,7 +34,7 @@ In our basic example, we are going to build one with just a single encoder
 and decoder layer and then we will feed some standard images into it. 
 
 In the end, we will have something which closely resembles the diagram below:
-![Architecture](./auto-encoder.png)
+![Architecture](./images/auto-encoder.png)
 
 
 ## Step 1 - A simple autoencoder
