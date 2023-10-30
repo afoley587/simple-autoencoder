@@ -1,4 +1,4 @@
-# Autoencoders: An intro and building your first one
+# Demystifying Autoencoders: Simplifying Complex Data with Magic Compression
 
 ## Introduction - What are autoencoders?
 
