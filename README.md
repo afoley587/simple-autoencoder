@@ -40,7 +40,7 @@ In the end, we will have something which closely resembles the diagram below:
 ![Architecture](./images/auto-encoder.png)
 
 
-## Step 1 - A simple autoencoder
+## A simple autoencoder
 
 First, let's import our necessary libraries:
 
